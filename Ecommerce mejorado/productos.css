@@ -1,0 +1,91 @@
+.dark-mode-btn {
+  background-color: #343a40 !important;
+  border-color: #343a40 !important;
+  color: #fff !important;
+}
+
+.filtro-header .btn {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+}
+
+.img-fluid {
+  width: 100%;
+  object-fit: cover;
+}
+
+.same-height {
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.image-text {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.filtro {
+  margin-bottom: 20px;
+}
+
+.filtro-header {
+  margin-bottom: 10px;
+}
+
+.filtro-body {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  color: #333; 
+}
+
+.filtro-seccion {
+  margin-bottom: 20px;
+}
+
+.filtro-seccion h5 {
+  margin-bottom: 10px;
+}
+
+.form-check-label {
+  color: #333;
+}
+
+.form-check-input {
+  margin-right: 5px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.col:nth-child(-n + 10) .card .card-img-top {
+  background-image: linear-gradient(#b0b0ae, #cfcfcf);
+}
+
+.btn-comprar:hover {
+  background-color: #0056b3;
+}
+
+.btn-like {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

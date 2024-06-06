@@ -1,0 +1,41 @@
+
+
+.container.text-center h2 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.container.text-start p {
+  font-size: 1.8em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.review-card {
+  margin-bottom: 20px;
+}
+
+.collage-item {
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collage-item img,
+.collage-item video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.collage-item img:hover,
+.collage-item video:hover {
+  transform: scale(1.05);
+}

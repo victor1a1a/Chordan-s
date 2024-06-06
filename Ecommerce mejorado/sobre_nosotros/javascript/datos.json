@@ -1,0 +1,115 @@
+{
+    "equipo": [
+        {
+            "nombre": "Francisco Espindola",
+            "rol": "Director General (CEO)",
+            "img": "./img/fotos-perfil/Francisco-Espindola.jpg",
+            "redes_sociales": [
+                {
+                    "name": "Instagram",
+                    "link": "https://www.instagram.com/frysccou/"
+                },
+                {
+                    "name": "Linkedin",
+                    "link": "https://www.linkedin.com/in/francisco-espindola-ba3a50296/"
+                }
+            ]
+        },
+        {
+            "nombre": "Lautaro Jandula",
+            "rol": "Director de Operaciones",
+            "img": "./img/fotos-perfil/Lautaro-Jandula.jpeg",
+            "redes_sociales": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/Croka"
+                },
+                {
+                    "name": "Instagram",
+                    "link": "https://www.instagram.com/_datboii.luca23?igsh=MWk3aW9meXp6c2xueg=="
+                }
+            ]
+        },
+        {
+            "nombre": "Joaquin Gómez",
+            "rol": "Director Financiero (CFO)",
+            "img": "./img/fotos-perfil/Joaquin_Gómez_Burgos.jpeg",
+            "redes_sociales": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/joacogomez"
+                }
+            ]
+        },
+        {
+            "nombre": "Luca",
+            "rol": "Director de Marketing",
+            "img": "./img/fotos-perfil/Luca.jpg",
+            "redes_sociales": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/Lucagame23"
+                }
+            ]
+        },
+        {
+            "nombre": "Andreh",
+            "rol": "Director de Diseño",
+            "img": "./img/fotos-perfil/perfil-defecto.jpeg",
+            "redes_sociales": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/SoyAndreh"
+                }
+            ]
+        },
+        {
+            "nombre": "José García",
+            "rol": "Gerente de Producción",
+            "img": "./img/fotos-perfil/perfil-defecto.jpeg",
+            "redes_sociales": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/Javier-GarciaP"
+                }
+            ]
+        },
+        {
+            "nombre": "Santiago",
+            "rol": "Gerente de Ventas",
+            "img": "./img/fotos-perfil/Santiago.jpg",
+            "redes_sociales": [
+                {
+                    "name": "Instagram",
+                    "link": "https://www.instagram.com/santy_25070?igsh=bGJneHFiaWx3OWZr"
+                }
+            ]
+        },
+        {
+            "nombre": "Alberti Victoria",
+            "rol": "Gerente de Logística",
+            "img": "./img/fotos-perfil/Alberti-Victoria.jpg",
+            "redes_sociales": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/victor1a1a"
+                },
+                {
+                    "name": "Instagram",
+                    "link": "https://www.instagram.com/cringeysi?igsh=MXdmeHZsOWtkbm5ycw=="
+                }
+            ]
+        },
+        {
+            "nombre": "Nombre Faltante",
+            "rol": "RRHH",
+            "img": "./img/fotos-perfil/perfil-defecto.jpeg",
+            "redes_sociales": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/Javier-GarciaP"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chordan's</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./productos.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/logo.png" alt="Logo" height="30" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html>Inicia Sesión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./carrito.html">Carrito</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre_nosotros/index.html">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div style="height: 100px"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="image-container">
+            <img
+              src="./assets/womanshoe.jpg"
+              class="img-fluid same-height"
+              alt="Imagen 1"
+            />
+            <div class="image-text">Mujer</div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="image-container">
+            <img
+              src="./assets/kidshoes.jpg"
+              class="img-fluid same-height"
+              alt="Imagen 2"
+            />
+            <div class="image-text">Niños</div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="image-container">
+            <img
+              src="./assets/manshoes.jpg"
+              id="reference-image"
+              class="img-fluid"
+              alt="Imagen 3"
+            />
+            <div class="image-text">Hombre</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form class="d-flex">
+            <input
+              id="buscar"
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success dark-mode-btn" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="filtro">
+            <div class="filtro-header">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseCategoria"
+                aria-expanded="false"
+                aria-controls="collapseCategoria"
+              >
+                <i class="bi bi-filter"></i>
+              </button>
+            </div>
+            <div class="collapse" id="collapseCategoria">
+              <div class="card card-body filtro-body">
+                <div class="filtro-seccion">
+                  <h5>Filtrar por Categoría</h5>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="categoria1"
+                    />
+                    <label class="form-check-label" for="categoria1">
+                      Running
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="categoria2"
+                    />
+                    <label class="form-check-label" for="categoria2">
+                      Baloncesto
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="categoria3"
+                    />
+                    <label class="form-check-label" for="categoria3">
+                      Estilo de vida
+                    </label>
+                  </div>
+                </div>
+                <div class="filtro-seccion">
+                  <h5>Filtrar por Precio</h5>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Precio mínimo"
+                      aria-label="Precio mínimo"
+                      id="minPrice"
+                    />
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Precio máximo"
+                      aria-label="Precio máximo"
+                      id="maxPrice"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 50px"></div>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen1.jpg"
+              class="card-img-top img-fluid"
+              alt="Air Jordan 1 Low OG Silver"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Air Jordan 1 Low OG Silver</h5>
+              <p class="card-text">$150</p>
+              <p class="card-text">
+                Las Air Jordan 1 Low OG Silver son una versión moderna de las
+                icónicas Air Jordan 1, presentando un diseño elegante con
+                colores clásicos y detalles sutiles. Son ideales para el uso
+                diario y ofrecen comodidad y estilo.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen2.jpg"
+              class="card-img-top img-fluid"
+              alt="Air Jordan XXXVIII Low"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Air Jordan XXXVIII Low</h5>
+              <p class="card-text">$160</p>
+              <p class="card-text">
+                Las Air Jordan XXXVIII Low son una opción versátil y cómoda para
+                la práctica de deportes o para un estilo casual. Con su diseño
+                moderno y materiales de alta calidad, ofrecen un ajuste perfecto
+                y un excelente rendimiento.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen3.jpg"
+              class="card-img-top img-fluid"
+              alt="Jordan 2/3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jordan 2/3</h5>
+              <p class="card-text">$170</p>
+              <p class="card-text">
+                Las Jordan 2/3 combinan elementos de diseño de las Air Jordan 2
+                y 3, ofreciendo un estilo único y versátil. Con su amortiguación
+                reactiva y sujeción estable, estas zapatillas son ideales para
+                jugar al baloncesto o para el uso diario.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/zapatillas/imagen4.jpg" class="card-img-top
+            img-fluid" alt="Air Jordan 1 Retro High OG "Latte"" />
+            <div class="card-body">
+              <h5 class="card-title">Air Jordan 1 Retro High OG "Latte"</h5>
+              <p class="card-text">$180</p>
+              <p class="card-text">
+                Las Air Jordan 1 Retro High OG 'Latte' son una reinterpretación
+                moderna de las clásicas Air Jordan 1, con un toque de elegancia
+                y estilo contemporáneo. Con su construcción premium y detalles
+                de alta calidad, estas zapatillas son una excelente adición a
+                cualquier colección.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen5.jpg"
+              class="card-img-top img-fluid"
+              alt="Air Jordan 1 Low"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Air Jordan 1 Low</h5>
+              <p class="card-text">$190</p>
+              <p class="card-text">
+                Las Air Jordan 1 Low son una versión más informal y versátil de
+                las icónicas Air Jordan 1. Con su diseño clásico y colores
+                llamativos, estas zapatillas son perfectas para cualquier
+                ocasión.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen6.jpg"
+              class="card-img-top img-fluid"
+              alt="Jordan True Flight"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jordan True Flight</h5>
+              <p class="card-text">$200</p>
+              <p class="card-text">
+                Las Jordan True Flight son unas zapatillas de baloncesto de alto
+                rendimiento diseñadas para ofrecer comodidad y sujeción durante
+                todo el juego. Con su amortiguación receptiva y suela duradera,
+                estas zapatillas te ayudarán a dar lo mejor de ti en la cancha.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen7.jpg"
+              class="card-img-top img-fluid"
+              alt="Jordan 6 Rings"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jordan 6 Rings</h5>
+              <p class="card-text">$210</p>
+              <p class="card-text">
+                Las Jordan 6 Rings son un homenaje a los seis campeonatos de
+                Michael Jordan con los Chicago Bulls. Con su diseño inspirado en
+                las zapatillas que MJ usó durante su carrera, estas zapatillas
+                son un clásico instantáneo en el mundo del baloncesto.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen8.jpg"
+              class="card-img-top img-fluid"
+              alt="Jordan Stadium 90"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jordan Stadium 90</h5>
+              <p class="card-text">$220</p>
+              <p class="card-text">
+                Las Jordan Stadium 90 son unas zapatillas de estilo retro
+                inspiradas en la cultura del deporte de los años 90. Con su
+                diseño llamativo y su suela gruesa, estas zapatillas son
+                perfectas para destacar en las calles.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen9.jpg"
+              class="card-img-top img-fluid"
+              alt="Jordan Air Ship PE SP"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jordan Air Ship PE SP</h5>
+              <p class="card-text">$230</p>
+              <p class="card-text">
+                Las Jordan Air Ship PE SP son unas zapatillas exclusivas
+                diseñadas para el legendario jugador de baloncesto Michael
+                Jordan. Con su estilo clásico y su confort excepcional, estas
+                zapatillas te harán sentir como un verdadero campeón en la
+                cancha.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen10.jpg"
+              class="card-img-top img-fluid"
+              alt="Jumpman Two Trey"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jumpman Two Trey</h5>
+              <p class="card-text">$240</p>
+              <p class="card-text">
+                Las Jumpman Two Trey son unas zapatillas diseñadas para brindar
+                un rendimiento óptimo en la cancha de baloncesto. Con su
+                amortiguación receptiva y su suela duradera, estas zapatillas te
+                ayudarán a dar lo mejor de ti en cada juego.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen11.jpg"
+              class="card-img-top img-fluid"
+              alt="Nike Everyday Plus Cushioned
+              Training Ankle Socks"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Nike Everyday Plus Cushioned Training Ankle Socks
+              </h5>
+              <p class="card-text">$250</p>
+              <p class="card-text">
+                Calcetines de entrenamiento acolchados Nike Everyday Plus para
+                un confort óptimo durante tus sesiones de entrenamiento.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen12.jpg"
+              class="card-img-top img-fluid"
+              alt="Dri-FIT Club
+              Structured Swoosh Cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dri-FIT Club Structured Swoosh Cap</h5>
+              <p class="card-text">$260</p>
+              <p class="card-text">
+                Gorra estructurada Dri-FIT Club con logo Swoosh de Nike,
+                perfecta para protegerte del sol durante tus actividades al aire
+                libre.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen13.jpg"
+              class="card-img-top img-fluid"
+              alt="Sportswear Essentials
+              Sling Bag (8L)"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sportswear Essentials Sling Bag (8L)</h5>
+              <p class="card-text">$270</p>
+              <p class="card-text">
+                Bolsa cruzada Sportswear Essentials con capacidad de 8 litros,
+                ideal para llevar tus cosas de forma cómoda y segura.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen14.jpg"
+              class="card-img-top img-fluid"
+              alt="Women's Reversible Belt"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Women's Reversible Belt</h5>
+              <p class="card-text">$280</p>
+              <p class="card-text">
+                Cinturón reversible para mujer, una opción versátil para
+                completar tus looks con estilo y elegancia.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen16.jpg"
+              class="card-img-top img-fluid"
+              alt="Nike Apex
+              Tie Dye Bucket Hat"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nike Apex Tie Dye Bucket Hat</h5>
+              <p class="card-text">$290</p>
+              <p class="card-text">
+                Sombrero tipo bucket Nike Apex con diseño teñido anudado para un
+                toque de color y estilo en cualquier ocasión.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen17.jpg"
+              class="card-img-top img-fluid"
+              alt="Sportswear Tech Pack
+              Men's Woven Utility Shorts"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Sportswear Tech Pack Men's Woven Utility Shorts
+              </h5>
+              <p class="card-text">$300</p>
+              <p class="card-text">
+                Shorts de utilidad tejidos para hombre de Sportswear Tech Pack,
+                combina estilo y funcionalidad para tus aventuras al aire libre.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen18.jpg"
+              class="card-img-top img-fluid"
+              alt="Dri-FIT Strike
+              Men's Soccer Drill Top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dri-FIT Strike Men's Soccer Drill Top</h5>
+              <p class="card-text">$310</p>
+              <p class="card-text">
+                Camiseta de entrenamiento de fútbol para hombre Dri-FIT Strike,
+                te mantiene fresco y seco durante tus sesiones de práctica.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen19.jpg"
+              class="card-img-top img-fluid"
+              alt="Sportswear Phoenix Fleece
+              Women's High-Waisted Shorts"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Sportswear Phoenix Fleece Women's High-Waisted Shorts
+              </h5>
+              <p class="card-text">$320</p>
+              <p class="card-text">
+                Shorts de talle alto para mujer Sportswear Phoenix Fleece,
+                suaves y cómodos para un look casual pero elegante.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen20.jpg"
+              class="card-img-top img-fluid"
+              alt="Sportswear
+              Girls' Crop Top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sportswear Girls' Crop Top</h5>
+              <p class="card-text">$330</p>
+              <p class="card-text">
+                Crop top para niñas de Sportswear, una prenda versátil y
+                divertida para jugar, hacer ejercicio o relajarse con estilo.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/zapatillas/imagen21.jpg"
+              class="card-img-top img-fluid"
+              alt="Nike Mini Me
+              Baby (0-9M) 3-Pack Bodysuits"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Nike Mini Me Baby (0-9M) 3-Pack Bodysuits
+              </h5>
+              <p class="card-text">$340</p>
+              <p class="card-text">
+                Pack de 3 bodies para bebé Nike Mini Me, confeccionados con
+                materiales suaves y cómodos para el máximo confort de tu
+                pequeño.
+              </p>
+            </div>
+            <button class="btn btn-outline-danger btn-like">
+              <i class="bi bi-heart"></i> 
+            </button>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 100px"></div>
+    <footer class="bg-dark text-white py-2 text-center">
+      <div>
+        <p class="text-xs font-weight-bold">Chordan's</p>
+        <p class="text-xxs">
+          © 2024 Todos los derechos reservados, si robas, te matamos.
+        </p>
+        <!-- Iconos de redes sociales -->
+        <ul class="list-inline mt-2">
+          <li class="list-inline-item">
+            <a href="#" class="text-white">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-white">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-white">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-white">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./productos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
